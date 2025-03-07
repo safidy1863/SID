@@ -2,18 +2,16 @@
 
 `pip3 install -r requirements.txt`
 
-- Récupération des emails (Boîte de réception)
+1.  Récupération des emails (Boîte de réception)
 `python3 email-recovery.py`
 
-- Prétraitement des emails
+2. Prétraitement des emails
 
-Avant de classer les emails, il faut extraire des caractéristiques (features).
+`python3 email-pre-processing.py`
 
-📌 Exemples de caractéristiques à extraire :
+3. Importation des données dans SIPINA :
+Entraîner les algorithmes de décision avec les données dans le fichier `emails_features_sipina.txt`
 
-    Présence de mots-clés : "promo", "newsletter", "offre", "gagner"
-    Nombre de majuscules
-    Nombre de liens (URLs)
-    Longueur du sujet
-
-
+4. Définisser dans votre SIPINA que is_spam est un variable cible 
+5. Entraîner le modèle
+6. Supprimer la colonne is_spam et laisse l'arbre de décision connaître l'email si c'est un spam ou non
