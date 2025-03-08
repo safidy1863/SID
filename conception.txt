@@ -1,0 +1,25 @@
+ Modélisation des processus
+
+[Début]
+   ↓  
+[Connexion à l'email]
+   ↓  
+[Récupération des emails]  
+   ↓  
+[Analyse et extraction des caractéristiques] 
+   ↓  
+[Classification (Arbre de décision)]
+   ↓  
+| Spam ? | ---- OUI ---> [Déplacement en SPAM]  
+   ↓ NON  
+[Email reste en boîte de réception]  
+   ↓  
+[Fin] 
+
+
+Technologies utilisées
+
+Récupération des emails : imaplib, email (Python), Communication avec la boîte mail
+Stockage des emails : pandas, SQLite, Gestion simple des données
+Classification	scikit-learn, SIPINA	Apprentissage automatique
+Interface utilisateur	Excel / Script Python	Visualisation des résultats
